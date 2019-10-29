@@ -1,6 +1,3 @@
-create_gitconfig_symlink:
-	if [ -f ~/.gitconfig ] ; then \
-		echo "Remove ~/.gitconfig"; \
-		rm ~/.gitconfig ; \
-	fi;
+create_symlinks:
 	ln -sf ${PWD}/git/.gitconfig ~/.gitconfig
+	ln -sf ${PWD}/.zshrc ~/.zshrc
