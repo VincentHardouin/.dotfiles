@@ -14,3 +14,4 @@ create_symlinks:
 	ln -sf ${PWD}/git/.gitconfig ~/.gitconfig
 	ln -sf ${PWD}/.zshrc ~/.zshrc
 	ln -sf ${PWD}/.vimrc ~/.vimrc
+	ln -sf ${PWD}/bin/* /usr/local/bin
