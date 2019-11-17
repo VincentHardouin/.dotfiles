@@ -4,6 +4,7 @@ brew 'git'
 brew 'thefuck'
 brew 'autojump'
 brew 'node'
+brew 'tldr'
 
 # Casks
 cask 'iterm2'
