@@ -5,6 +5,7 @@ brew 'thefuck'
 brew 'autojump'
 brew 'node'
 brew 'tldr'
+brew 'ripgrep'
 
 # Casks
 cask 'iterm2'
