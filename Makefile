@@ -15,3 +15,8 @@ create_symlinks:
 	ln -sf ${PWD}/.zshrc ~/.zshrc
 	ln -sf ${PWD}/.vimrc ~/.vimrc
 	ln -sf ${PWD}/bin/* /usr/local/bin
+
+edit_mac_config:
+	defaults write -g InitialKeyRepeat -int 15
+	defaults write -g KeyRepeat -int 2
+	defaults write com.apple.Dock orientation -string left
