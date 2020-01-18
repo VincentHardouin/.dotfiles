@@ -20,3 +20,11 @@ edit_mac_config:
 	defaults write -g InitialKeyRepeat -int 15
 	defaults write -g KeyRepeat -int 2
 	defaults write com.apple.Dock orientation -string left
+
+install_app_store_apps:
+# Install Magnet
+	mas install 441258766
+# Install Bear
+	mas install 1091189122
+# Install PiPer 
+	mas install 1421915518
