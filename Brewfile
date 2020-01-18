@@ -6,6 +6,7 @@ brew 'autojump'
 brew 'node'
 brew 'tldr'
 brew 'ripgrep'
+brew 'mas'
 
 # Casks
 cask 'iterm2'
