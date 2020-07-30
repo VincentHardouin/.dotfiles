@@ -16,3 +16,5 @@
 	enabled = true
 [commit]
 	verbose = true
+[rebase]
+	autosquash = true
