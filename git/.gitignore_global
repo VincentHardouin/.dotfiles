@@ -1,0 +1,10 @@
+## IDEA Files
+**/.idea
+.iml 
+
+.DS_Store
+
+**/.env
+
+**/dist
+**/tmp

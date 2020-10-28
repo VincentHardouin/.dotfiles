@@ -12,6 +12,7 @@ install_oh-my-zsh:
 
 create_symlinks:
 	ln -sf ${PWD}/git/.gitconfig ~/.gitconfig
+	ln -sf ${PWD}/git/.gitignore_global ~/.gitignore_global
 	ln -sf ${PWD}/.zshrc ~/.zshrc
 	ln -sf ${PWD}/.vimrc ~/.vimrc
 	ln -sf ${PWD}/bin/* /usr/local/bin
