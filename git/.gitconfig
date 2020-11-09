@@ -4,6 +4,7 @@
 [core]
 	editor = vim
 	autocrlf = input
+	excludesfile = /Users/vincenthardouin/.gitignore_global
 [alias]
 	# Pop your last commit out of the history! No change lost, just unindexed
     	pop = reset HEAD^
