@@ -5,6 +5,6 @@
 .DS_Store
 
 **/.env
-
+**/.envrc
 **/dist
 **/tmp
