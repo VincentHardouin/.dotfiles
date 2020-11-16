@@ -1,17 +1,25 @@
 cask_args appdir: "/Applications"
 # Install package
-brew 'git'
-brew 'thefuck'
-brew 'autojump'
-brew 'node'
-brew 'tldr'
-brew 'ripgrep'
+
+## Utilities
 brew 'mas'
-brew 'jq'
+
+## Productivity
+brew 'thefuck'
+brew 'tldr'
+brew 'autojump'
+
+## Dev 
+brew 'git'
 brew 'httpie'
+brew 'jq'
+brew 'ripgrep'
+brew 'node'
 brew 'postgresql'
 brew 'pgcli'
 brew 'kubernetes-cli'
+brew "minikube"
+brew "nvm"
 
 # Casks
 cask 'iterm2'
