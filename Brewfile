@@ -20,6 +20,9 @@ brew 'pgcli'
 brew 'kubernetes-cli'
 brew "minikube"
 brew "nvm"
+brew "ansible"
+brew "vagrant"
+brew "virtualbox"
 
 # Casks
 cask 'iterm2'
