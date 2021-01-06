@@ -20,7 +20,11 @@ create_symlinks:
 edit_mac_config:
 	defaults write -g InitialKeyRepeat -int 15
 	defaults write -g KeyRepeat -int 2
+
+	## Dock 
 	defaults write com.apple.Dock orientation -string left
+	defaults write com.apple.dock autohide -bool true
+	defaults write com.apple.dock tilesize -int 46
 
 install_app_store_apps:
 # Install Magnet
