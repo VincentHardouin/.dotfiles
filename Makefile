@@ -31,3 +31,5 @@ install_app_store_apps:
 	mas install 1421915518
 # Install iStat Menu
 	mas install 1319778037	
+# Install Giphy Capture 
+	mas install 668208984
