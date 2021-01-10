@@ -16,6 +16,7 @@ create_symlinks:
 	ln -sf ${PWD}/.zshrc ~/.zshrc
 	ln -sf ${PWD}/.vimrc ~/.vimrc
 	ln -sf ${PWD}/bin/* /usr/local/bin
+	ln -sf ${PWD}/starship.toml ~/.config/starship.toml
 
 edit_mac_config:
 	defaults write -g InitialKeyRepeat -int 15
