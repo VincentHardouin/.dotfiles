@@ -27,6 +27,11 @@ edit_mac_config:
 	defaults write com.apple.dock autohide -bool true
 	defaults write com.apple.dock tilesize -int 46
 
+	## Screenshot
+	defaults write com.apple.screencapture location /Users/vincenthardouin/Desktop/screenshots
+
+	killall SystemUIServer
+
 install_app_store_apps:
 # Install Magnet
 	mas install 441258766
