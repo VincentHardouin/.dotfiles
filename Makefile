@@ -1,5 +1,5 @@
 install_apps: 
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew	 
 	brew bundle
 
 install_vim_plugins: 
@@ -8,7 +8,7 @@ install_vim_plugins:
 	git clone https://github.com/itchyny/lightline.vim ~/.vim/pack/interface/start/lightline.vim
 
 install_oh-my-zsh: 
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
 
 create_symlinks:
 	ln -sf ${PWD}/git/.gitconfig ~/.gitconfig
