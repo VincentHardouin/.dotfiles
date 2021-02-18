@@ -19,5 +19,6 @@
 	verbose = true
 [rebase]
 	autosquash = true
+	autoStash = true
 [init]
 	defaultBranch = main
