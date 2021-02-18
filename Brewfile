@@ -19,10 +19,12 @@ brew 'postgresql'
 brew 'pgcli'
 brew 'kubernetes-cli'
 brew "minikube"
+brew "ngrok"
+brew "nmap"
 brew "nvm"
 brew "ansible"
-brew "vagrant"
 brew "virtualbox"
+brew "vagrant"
 
 # Casks
 cask 'iterm2'
@@ -38,3 +40,4 @@ cask 'maccy'
 cask 'vscodium'
 cask 'dozer'
 cask 'lunar'
+cask 'keepassxc'
