@@ -33,6 +33,11 @@ edit_mac_config:
 	killall SystemUIServer
 
 install_app_store_apps:
+	echo "ID iCloud :"
+	read COMPTE
+	echo "Compte: $COMPTE Password :"
+	read -s PASSWORD
+	mas signin $COMPTE "$PASSWORD"
 # Install Magnet
 	mas install 441258766
 # Install Bear
