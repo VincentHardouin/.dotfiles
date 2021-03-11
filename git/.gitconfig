@@ -16,6 +16,7 @@
 [rerere]
 	enabled = true
 [commit]
+  	template = ~/.gitmessage
 	verbose = true
 [rebase]
 	autosquash = true
