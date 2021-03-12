@@ -214,3 +214,8 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
+export FZF_DEFAULT_OPTS='-m --height 50% --border'
+
