@@ -18,6 +18,9 @@ set laststatus=2
 " do not show mode
 set noshowmode
 
+" highlight all matches 
+set hlsearch
+
 " define lightline configuration
 let g:lightline = {
       \ 'colorscheme': 'solarized',
@@ -29,6 +32,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'jiangmiao/auto-pairs'
+Plug '907th/vim-auto-save'
 
 call plug#end()
 
@@ -37,4 +42,13 @@ nnoremap <silent> <C-f> :Files<CR>
 nnoremap <silent> <C-g> :GFiles<CR>
 nnoremap <silent> <C-Up> :m-2<CR>==
 nnoremap <silent> <C-Down> :m+<CR>==
+
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['eslint']
+
+" Fix files automatically on save
+let g:ale_fix_on_save = 1
+
+" Disable autocomment line 
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
