@@ -4,7 +4,6 @@ alias ga="git add ."
 alias gap="git add -p"
 alias gf="git pull --rebase"
 alias gfix='f() { git commit -m "Fix $1" };f'
-alias gh="git stash"
 alias gi="git ignore"
 alias gk="git clone"
 alias gl="git log --graph --decorate --pretty=oneline --abbrev-commit"
