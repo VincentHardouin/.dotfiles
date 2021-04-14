@@ -1,6 +1,9 @@
 [user]
-	email = vincent.hardouin@pix.fr
+	email = vincenthardouin@icloud.com
 	name = Vincent Hardouin
+[includeIf "gitdir/i:**/pix/**"]
+	email = vincent.hardouin@pix.fr
+
 [core]
 	editor = vim
 	autocrlf = input
@@ -23,3 +26,6 @@
 	autoStash = true
 [init]
 	defaultBranch = main
+[branch]
+	sort = -commiterdate
+
