@@ -227,3 +227,5 @@ unset __conda_setup
 export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
 export FZF_DEFAULT_OPTS='-m --height 50% --border'
 
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
