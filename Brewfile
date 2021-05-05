@@ -20,6 +20,7 @@ brew 'pgcli'
 brew 'postgresql'
 brew "pv"
 brew 'ripgrep'
+brew "ruby"
 brew 'thefuck'
 brew 'tldr'
 brew "vagrant"
