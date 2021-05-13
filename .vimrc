@@ -10,7 +10,6 @@ set t_Co=256
 set background=dark
 
 " define color scheme
-colorscheme solarized
 
 " always display status line
 set laststatus=2
@@ -34,6 +33,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'jiangmiao/auto-pairs'
 Plug '907th/vim-auto-save'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
