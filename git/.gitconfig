@@ -27,5 +27,4 @@
 [init]
 	defaultBranch = main
 [branch]
-	sort = -commiterdate
 
