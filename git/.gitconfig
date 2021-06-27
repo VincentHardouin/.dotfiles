@@ -1,8 +1,8 @@
 [user]
 	email = vincenthardouin@icloud.com
 	name = Vincent Hardouin
-[includeIf "gitdir/i:**/pix/**"]
-	email = vincent.hardouin@pix.fr
+[includeIf "gitdir:~/dev/pix/"]
+	path = ~/dev/pix/.gitconfig-pix
 
 [core]
 	editor = vim
