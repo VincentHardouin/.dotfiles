@@ -46,8 +46,8 @@ alias nx="npx"
 
 # Docker
 # ---
-alias dcd="docker-compose down"
-alias dcu="docker-compose up -d"
+alias dcd="docker compose down"
+alias dcu="docker compose up -d"
 
 # THEFUCK
 # ---
