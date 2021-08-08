@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+gh api /users/VincentHardouin/starred --paginate | jq ".[] | select(.name | test(\"(?i)(${1})\")) |  .html_url"
