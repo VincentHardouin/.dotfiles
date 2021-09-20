@@ -152,6 +152,21 @@ alias nw="npm run watch"
 alias ny="npm run test:watch"
 alias nx="npx"
 
+COMMON_FLAGS='--rm --interactive --tty --user 1000:1000 --volume $(pwd):/code --workdir /code'
+# node 14
+#alias node="docker run $COMMON_FLAGS node:14"
+#alias yarn='node yarn'
+#alias npm='node npm'
+
+
+alias sp="docker run \
+  -it \
+  --rm \
+  --name steampipe \
+ 	--mount type=bind,source=$HOME/.steampipe/config,target=/home/steampipe/.steampipe/config  \
+  --mount type=bind,source=$HOME/.steampipe/plugins,target=/home/steampipe/.steampipe/plugins   \
+  turbot/steampipe"
+
 # Docker
 # ---
 alias dcd="docker-compose down"
@@ -210,4 +225,5 @@ eval "$(starship init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
 export FZF_DEFAULT_OPTS='-m --height 50% --border'
+
 
