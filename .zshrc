@@ -154,10 +154,12 @@ alias nx="npx"
 
 COMMON_FLAGS='--rm --interactive --tty --user 1000:1000 --volume $(pwd):/code --workdir /code'
 # node 14
-#alias node="docker run $COMMON_FLAGS node:14"
-#alias yarn='node yarn'
-#alias npm='node npm'
+alias node="docker run $COMMON_FLAGS node:14"
+alias yarn='node yarn'
+alias npm='node npm'
+alias npx='node npx'
 
+alias ruby="docker run $COMMON_FLAGS ruby"
 
 alias sp="docker run \
   -it \
