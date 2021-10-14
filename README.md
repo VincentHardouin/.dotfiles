@@ -4,5 +4,5 @@ Le but de ce repo est d’avoir tous mes fichiers de configuration, afin de mett
 
 ## Installation 
 1. Clone le repo 
-2. Lancer le fichier make permettant de créer les liens symbolique : `make all`
+2. Lancer le fichier make permettant de créer les liens symboliques : `make all`
 
