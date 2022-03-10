@@ -9,6 +9,7 @@ brew "gh"
 brew 'git'
 brew 'httpie'
 brew 'jq'
+brew 'jc'
 brew 'mas'
 brew "ncdu"
 brew "ngrok"

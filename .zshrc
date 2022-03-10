@@ -207,4 +207,7 @@ eval "$(starship init zsh)"
 export FZF_DEFAULT_COMMAND='rg --files --follow --hidden'
 export FZF_DEFAULT_OPTS='-m --height 50% --border'
 
-
+# JC
+# ----
+# Alias for jc because autojump used also jc 
+alias jsonc="/usr/local/bin/jc"
