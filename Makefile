@@ -18,6 +18,7 @@ create_symlinks:
 	ln -sf ${PWD}/.vimrc ~/.vimrc
 	ln -sf ${PWD}/bin/* /usr/local/bin
 	ln -sf ${PWD}/starship.toml ~/.config/starship.toml
+	ln -sf ${PWD}/.finicky.js ~/.finicky.js
 
 edit_mac_config:
 	defaults write -g InitialKeyRepeat -int 15
