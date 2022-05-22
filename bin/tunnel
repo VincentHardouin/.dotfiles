@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+name=${1}
+port=${2}
+
+ssh -p 4422 -R ${name}:80:localhost:${port} tunnel.vincenthardouin.dev
