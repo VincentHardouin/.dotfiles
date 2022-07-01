@@ -16,6 +16,8 @@
 			cleaner = "!f() { git fetch --prune && git branch --merged $(git symbolic-ref --short refs/remotes/origin/HEAD) |xargs git branch -d && echo 'Clean completed';}; f"
 [pull]
 	rebase = true
+[push]
+	autoSetupRemote = true
 [rerere]
 	enabled = true
 [commit]
