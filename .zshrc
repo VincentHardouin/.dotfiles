@@ -69,13 +69,13 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	docker
-	ember-cli
+	#docker
+	#ember-cli
 	git
-	gitignore
+	#gitignore
 	iterm2
-	node
-	npm	
+	#node
+	#npm	
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -116,7 +116,7 @@ alias gi="git ignore"
 alias gk="git clone"
 alias gl="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias gn="git rebase --continue"
-alias go="git checkout"
+#alias go="git checkout"
 alias gp="git push"
 alias gpf="git push --force-with-lease"
 alias gs="git status"
@@ -152,12 +152,13 @@ alias nw="npm run watch"
 alias ny="npm run test:watch"
 alias nx="npx"
 
-COMMON_FLAGS='--rm --interactive --tty --user 1000:1000 --volume $(pwd):/code --workdir /code'
+COMMON_FLAGS='--rm --interactive --tty --user 501:501 --volume $(pwd):/code --workdir /code'
+
 # node 14
-alias node="docker run $COMMON_FLAGS node:14"
-alias yarn='node yarn'
-alias npm='node npm'
-alias npx='node npx'
+#alias node="docker run $COMMON_FLAGS node:14"
+#alias yarn='node yarn'
+#alias npm='node npm'
+#alias npx='node npx'
 
 alias ruby="docker run $COMMON_FLAGS ruby"
 
@@ -190,8 +191,8 @@ eval "$(direnv hook zsh)"
 
 # NVM
 # --- 
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 #[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Use npm version from .nvmrc
