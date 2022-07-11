@@ -3,27 +3,33 @@ cask_args appdir: "/Applications"
 
 brew "ansible"
 brew 'autojump'
+brew 'dua-cli'
 brew 'fd'
 brew 'fzf'
 brew "gh"
 brew 'git'
+brew 'htop'
 brew 'httpie'
+brew 'hugo'
 brew 'jq'
 brew 'jc'
 brew 'mas'
-brew "ncdu"
+#brew "ncdu"
 brew "ngrok"
 brew "nmap"
-brew 'node'
-brew "nvm"
+#brew 'node'
+#brew "nvm"
 brew 'pgcli'
 brew "pv"
 brew 'ripgrep'
+brew 'rsync'
 brew "ruby"
+brew 'shellcheck'
+brew 'starship'
 brew 'thefuck'
 brew 'tldr'
-brew "vagrant"
-brew "virtualbox"
+#brew "vagrant"
+#brew "virtualbox"
 brew "watch"
 
 # Casks
@@ -40,6 +46,6 @@ cask 'monitorcontrol'
 cask 'obsidian'
 cask 'slack'
 cask 'spotify'
-cask 'postman'
+#cask 'postman'
 cask "the-unarchiver"
-cask 'vscodium'
+#cask 'vscodium'
