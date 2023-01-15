@@ -166,6 +166,28 @@ alias sp="docker run \
   --mount type=bind,source=$HOME/.steampipe/plugins,target=/home/steampipe/.steampipe/plugins   \
   turbot/steampipe"
 
+jira() {
+  op run --env-file=$HOME/.config/op/jira -- docker run \
+  --interactive \
+  --tty \
+  --rm \
+  -e JIRA_API_TOKEN \
+  --mount type=bind,source=$HOME/.jira-config,target=/root/.config/.jira/.config.yml \
+  ghcr.io/ankitpokhrel/jira-cli:latest \
+  -c "jira $1"
+}
+
+jnt() {
+  op run --env-file=$HOME/.config/op/jira -- docker run \
+  --interactive \
+  --tty \
+  --rm \
+  -e JIRA_API_TOKEN \
+  --mount type=bind,source=$HOME/.jira-config,target=/root/.config/.jira/.config.yml \
+  ghcr.io/ankitpokhrel/jira-cli:latest \
+  -c "jira issue create -s \"$1\" --custom Equipix=\"Experience d'Evaluation\""
+}
+
 # Docker
 # ---
 alias dcd="docker-compose down"
