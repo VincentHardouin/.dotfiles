@@ -110,19 +110,16 @@ source $ZSH/oh-my-zsh.sh
 # ---
 alias ga="git add ."
 alias gap="git add -p"
-alias gf="git pull --rebase"
-alias gfix='f() { git commit -m "Fix $1" };f'
+alias gfix='f() { git commit --fixup $1 };f'
 alias gi="git ignore"
 alias gk="git clone"
 alias gl="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias gn="git rebase --continue"
-#alias go="git checkout"
 alias gp="git push"
 alias gpf="git push --force-with-lease"
 alias gs="git status"
 alias gra="git rebase --abort"
 alias gri="git rebase -i"
-alias gx="git reset HEAD --hard"
 alias gy="git commit --amend --no-edit"
 alias gay="git commit --all --amend --no-edit"
 
@@ -150,7 +147,6 @@ alias nt="npm test"
 alias nu="npm uninstall"
 alias nw="npm run watch"
 alias ny="npm run test:watch"
-alias nx="npx"
 
 COMMON_FLAGS='--rm --interactive --tty --user 501:501 --volume $(pwd):/code --workdir /code'
 
