@@ -1,7 +1,7 @@
 cask_args appdir: "/Applications"
 # Install package
 
-brew "ansible"
+#brew "ansible"
 brew 'autojump'
 brew 'dua-cli'
 brew 'fd'
@@ -31,9 +31,11 @@ brew 'tldr'
 #brew "vagrant"
 #brew "virtualbox"
 brew "watch"
+brew "zoxide"
 
 # Casks
 cask '1password'
+cask '1password/tap/1password-cli'
 cask 'brave-browser'
 cask 'docker'
 cask 'dozer'
@@ -46,6 +48,4 @@ cask 'monitorcontrol'
 cask 'obsidian'
 cask 'slack'
 cask 'spotify'
-#cask 'postman'
 cask "the-unarchiver"
-#cask 'vscodium'
