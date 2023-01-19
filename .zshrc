@@ -201,6 +201,10 @@ eval $(thefuck --alias)
 # --- 
 [ -f $(brew --prefix)/etc/profile.d/autojump.sh ] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
+# ZOXIDE
+# ---
+eval "$(zoxide init zsh)"
+
 DEFAULT_USER=$(whoami)
 
 # Direnv
