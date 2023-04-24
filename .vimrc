@@ -19,6 +19,11 @@ set noshowmode
 
 " highlight all matches 
 set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+set encoding=utf-8
 
 " define lightline configuration
 let g:lightline = {
