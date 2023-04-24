@@ -197,19 +197,11 @@ alias dcu="docker-compose up -d"
 # ---
 eval $(thefuck --alias)
 
-# AUTOJUMP
-# --- 
-[ -f $(brew --prefix)/etc/profile.d/autojump.sh ] && . $(brew --prefix)/etc/profile.d/autojump.sh
-
 # ZOXIDE
 # ---
 eval "$(zoxide init zsh)"
 
 DEFAULT_USER=$(whoami)
-
-# Direnv
-# --- 
-eval "$(direnv hook zsh)"
 
 # NVM
 # --- 
@@ -243,3 +235,13 @@ j() {
 # ----
 # Alias for jc because autojump used also jc 
 alias jsonc="/usr/local/bin/jc"
+
+autoload -U edit-command-line
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+## COPILOT
+eval "$(github-copilot-cli alias -- "$0")"
+
+## 1Password
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
