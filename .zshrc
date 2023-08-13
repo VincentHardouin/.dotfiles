@@ -129,6 +129,10 @@ alias gw="git wip"
 alias gu="git unwip"
 alias gpop="git pop"
 
+gprev() { 
+	git reflog | grep checkout | grep -o 'to .*$' | grep -o ' .*$' | awk '!x[$0]++' | fzf | xargs git switch
+}
+
 # NPM
 # ---
 alias nb="npm run build"
