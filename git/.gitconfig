@@ -21,11 +21,17 @@
 [rerere]
 	enabled = true
 [commit]
-	verbose = true
+	verbose = false
+	gpgsign = true
 [rebase]
 	autosquash = true
 	autoStash = true
+	updateRefs = false
 [init]
 	defaultBranch = main
 [branch]
 
+[gpg]
+  format = ssh
+[gpg "ssh"]
+program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
