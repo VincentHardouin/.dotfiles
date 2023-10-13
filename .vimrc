@@ -1,4 +1,5 @@
 set number 
+set scrolloff=6
 syntax on
 " make Vim behave in a more useful way
 set nocompatible
