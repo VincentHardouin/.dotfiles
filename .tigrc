@@ -1,0 +1,2 @@
+ bind generic 9 !@sh -c "printf '%s' $(git rev-parse --short %(commit)) | pbcopy"
+ bind main = !@sh -c "git commit --fixup $(git rev-parse --short %(commit))"
