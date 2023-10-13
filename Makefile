@@ -1,5 +1,5 @@
 install_apps: 
-	mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew	 
+#	mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew	 
 	brew bundle
 
 install_vim_plugins: 
@@ -16,7 +16,7 @@ create_symlinks:
 	ln -sf ${PWD}/git/.gitmessage ~/.gitmessage
 	ln -sf ${PWD}/.zshrc ~/.zshrc
 	ln -sf ${PWD}/.vimrc ~/.vimrc
-	ln -sf ${PWD}/bin/* /usr/local/bin
+#	ln -sf ${PWD}/bin/* /usr/local/bin
 	ln -sf ${PWD}/starship.toml ~/.config/starship.toml
 	ln -sf ${PWD}/.finicky.js ~/.finicky.js
 
@@ -42,11 +42,5 @@ install_app_store_apps:
 	mas signin $COMPTE "$PASSWORD"
 # Install Magnet
 	mas install 441258766
-# Install Bear
-	mas install 1091189122
-# Install PiPer 
-	mas install 1421915518
 # Install iStat Menu
 	mas install 1319778037	
-# Install Giphy Capture 
-	mas install 668208984
