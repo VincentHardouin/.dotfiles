@@ -3,15 +3,17 @@ cask_args appdir: "/Applications"
 
 brew 'asdf'
 brew 'dua-cli'
+brew 'dust'
 brew 'fd'
 brew 'fzf'
+brew 'gawk'
 brew "gh"
 brew 'git'
 brew 'htop'
 brew 'httpie'
 brew 'hugo'
-brew 'jq'
 brew 'jc'
+brew 'jq'
 brew 'mas'
 brew "ngrok"
 brew "nmap"
@@ -22,6 +24,8 @@ brew 'rsync'
 brew "ruby"
 brew 'shellcheck'
 brew 'starship'
+brew 'swiftformat'
+brew 'swiftlint'
 brew 'thefuck'
 brew 'tig'
 brew 'tldr'
