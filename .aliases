@@ -2,13 +2,8 @@
 # ---
 alias ga="git add ."
 alias gap="git add -p"
-alias gf="git pull --rebase"
-alias gfix='f() { git commit -m "Fix $1" };f'
-alias gi="git ignore"
-alias gk="git clone"
 alias gl="git log --graph --decorate --pretty=oneline --abbrev-commit"
-alias gn="git rebase --continue"
-alias go="git checkout"
+alias grc="git rebase --continue"
 alias gp="git push"
 alias gpf="git push --force-with-lease"
 alias gs="git status"
