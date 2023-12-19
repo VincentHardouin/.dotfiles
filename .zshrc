@@ -207,15 +207,6 @@ eval "$(zoxide init zsh)"
 
 DEFAULT_USER=$(whoami)
 
-# NVM
-# --- 
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-#[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-# Use npm version from .nvmrc
-# ----
-
 # Starship
 # ----
 eval "$(starship init zsh)"
@@ -242,10 +233,8 @@ alias jsonc="/usr/local/bin/jc"
 
 autoload -U edit-command-line
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-## COPILOT
-eval "$(github-copilot-cli alias -- "$0")"
-
 ## 1Password
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+
+## RTX
+eval "$(rtx activate zsh)"
