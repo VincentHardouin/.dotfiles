@@ -1,7 +1,6 @@
 cask_args appdir: "/Applications"
 # Install package
 
-brew 'asdf'
 brew 'dua-cli'
 brew 'dust'
 brew 'fd'
@@ -15,6 +14,7 @@ brew 'hugo'
 brew 'jc'
 brew 'jq'
 brew 'mas'
+brew 'mise'
 brew "ngrok"
 brew "nmap"
 brew 'pgcli'
