@@ -1,5 +1,5 @@
 module.exports = {
-  defaultBrowser: "Firefox Nightly",
+  defaultBrowser: "Firefox",
   options: {
     hideIcon: true
   },
