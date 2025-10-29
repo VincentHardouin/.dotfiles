@@ -1,9 +1,10 @@
 cask_args appdir: "/Applications"
 # Install package
 
-brew 'dua-cli'
-brew 'dust'
 brew 'csvlens'
+brew 'dua-cli'
+brew 'duckdb'
+brew 'dust'
 brew 'fd'
 brew 'fzf'
 brew 'gawk'
